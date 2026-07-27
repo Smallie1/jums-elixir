@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050505;
+    color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.7;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#000000;
+    border-bottom:1px solid #222;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:#d4af37;
+    font-size:1.6rem;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.hero-content{
+    max-width:750px;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    color:#d0d0d0;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:40px;
+    font-weight:bold;
+}
+
+.about,
+.fragrances,
+.products,
+.contact{
+    padding:100px 8%;
+}
+
+h2{
+    text-align:center;
+    color:#d4af37;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.fragrance-grid,
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.fragrance-card,
+.product-card{
+    background:#111111;
+    border:1px solid rgba(212,175,55,0.35);
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+}
+
+.fragrance-card h3,
+.product-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin-bottom:12px;
+}
+
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:14px 20px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    border-top:1px solid #222;
+    color:#aaaaaa;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+}

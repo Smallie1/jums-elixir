@@ -28,10 +28,14 @@ nav{
 }
 
 .logo{
-    color:#d4af37;
-    font-size:1.6rem;
-    font-weight:bold;
-    letter-spacing:1px;
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    height:120px;
+    width:auto;
+    display:block;
 }
 
 .nav-links a{
@@ -59,11 +63,19 @@ nav{
 }
 
 .hero h1{
-    font-size:4rem;
+    font-size:5rem;
     color:#d4af37;
+    margin-bottom:10px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+.tagline{
+    color:#d4af37;
+    font-size:1.3rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
     margin-bottom:20px;
 }
-
 .hero p{
     font-size:1.1rem;
     color:#d0d0d0;
@@ -222,4 +234,19 @@ html{
     height:280px;
     object-fit:cover;
     border-radius:12px;
+
+
+
+.hero-logo{
+    width: 250px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+.hero-product{
+    width:320px;
+    max-width:90%;
+    margin-top:40px;
+    border-radius:20px;
 }
